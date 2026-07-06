@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 170" width="720" height="170" role="img" aria-label="Terminal typing animation: a question and its reply">
+  <style>
+    text { font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace; }
+    .prompt { fill: #7ee787; }
+    .u { fill: #e6edf3; font-size: 20px; }
+    .r { fill: #8b949e; font-size: 20px; }
+    .title { fill: #586069; font-size: 13px; }
+
+    .l1 { clip-path: inset(0 100% 0 0); animation: t1 9s infinite; }
+    .l2 { clip-path: inset(0 100% 0 0); animation: t2 9s infinite; }
+    .cur { fill: #58a6ff; animation: blink 1s steps(1) infinite; }
+
+    @keyframes blink { 50% { opacity: 0; } }
+
+    @keyframes t1 {
+      0%   { clip-path: inset(0 100% 0 0); animation-timing-function: steps(22, end); }
+      28%  { clip-path: inset(0 0 0 0); }
+      95%  { clip-path: inset(0 0 0 0); }
+      100% { clip-path: inset(0 100% 0 0); }
+    }
+    @keyframes t2 {
+      0%   { clip-path: inset(0 100% 0 0); }
+      33%  { clip-path: inset(0 100% 0 0); animation-timing-function: steps(38, end); }
+      62%  { clip-path: inset(0 0 0 0); }
+      95%  { clip-path: inset(0 0 0 0); }
+      100% { clip-path: inset(0 100% 0 0); }
+    }
+  </style>
+
+  <rect x="8" y="8" width="704" height="154" rx="12" fill="#0b0f14" stroke="#1f2933" stroke-width="1"/>
+
+  <circle cx="34" cy="34" r="6" fill="#ff5f56"/>
+  <circle cx="56" cy="34" r="6" fill="#ffbd2e"/>
+  <circle cx="78" cy="34" r="6" fill="#27c93f"/>
+  <text x="360" y="39" text-anchor="middle" class="title">ask-dev — interactive</text>
+
+  <text x="30" y="95" class="u l1"><tspan class="prompt">&gt; </tspan>what do you work on?</text>
+  <text x="30" y="132" class="r l2">images, multimodal &amp; the seams between them.</text>
+
+  <rect class="cur" x="30" y="145" width="11" height="3"/>
+</svg>
